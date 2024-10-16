@@ -72,10 +72,10 @@
 <table style="width: 100%; border-collapse: collapse;">
     <tr>
         <td style="padding: 18px;">
-            <h1 style="display: inline; font-size: 60px; margin-left: 40px">이름</h1> <!-- 제목 부분 -->
-            <span style="margin-left: 180px; font-size: 30px"><a href="/smellGroup">소모임</a></span>
-            <span style="margin-left: 30px; font-size: 30px"><a href="/website">웹사이트</a></span>
-            <span style="margin-left: 30px; font-size: 30px"><a href="/sell">판매</a></span>
+            <h1 style="display: inline; font-size: 60px; margin-left: 40px; color: #4caf50">이름</h1> <!-- 제목 부분 -->
+            <span style="margin-left: 180px; font-size: 30px;" ><a href="/smellGroup" style=" color: black; text-decoration: none">소모임</a></span>
+            <span style="margin-left: 30px; font-size: 30px;"><a href="/website" style=" color: black; text-decoration: none">웹사이트</a></span>
+            <span style="margin-left: 30px; font-size: 30px;"><a href="/sell" style=" color: black; text-decoration: none">판매</a></span>
         </td>
         <td style="padding: 18px; text-align: right; ">
             <a href="/login" style="padding: 10px 20px; background-color: #4caf50; color: white; border-radius: 5px; text-decoration: none; ">로그인</a>
@@ -108,10 +108,10 @@
 <!--footer는 페이지 하단 부분을 의미한다. -->
 <footer style="text-align: center; padding: 20px; background-color: #f1f1f1; font-size: 14px;">
     <br><br>
-    <a href="#" style="margin-right: 20px;">이용 약관</a>
-    <a href="#" style="margin-right: 20px;">개인정보 처리방침</a>
-    <a href="#" style="margin-right: 20px;">회사 소개</a>
-    <a href="#" >고객 센터</a>
+    <a href="#" style="margin-right: 20px; color: black; text-decoration: none">이용 약관</a>  <!--글자색은 검정, 그 뒤는 밑줄 제거-->
+    <a href="#" style="margin-right: 20px; color: black; text-decoration: none">개인정보 처리방침</a>
+    <a href="#" style="margin-right: 20px; color: black; text-decoration: none">회사 소개</a>
+    <a href="#" style="color: black; text-decoration: none">고객 센터</a>
     <br>
     <h3>team3 / Team Project</h3>
     <br>
