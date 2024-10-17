@@ -46,27 +46,69 @@
       width: 45%; /* 버튼 너비 */
       padding: 10px; /* 패딩 */
     }
+    input[type="button"] {
+      width: 100%; /* 버튼 너비를 100%로 설정 */
+      padding: 15px; /* 패딩을 늘림 */
+      margin: 5px 0; /* 버튼 사이 여백 */
+      font-size: 16px; /* 폰트 크기 조정 */
+      border-radius: 5px;
+      background-color: white;
+    }
   </style>
 </head>
 <body>
-<form action="signup_process.jsp" name="user_info" method="post">
+<form action="/login" name="user_info" method="post">
   <fieldset>
-    <legend>회원가입</legend>
+    <legend>로그인</legend>
 
-    아이디 : <br>
-    <input type="text" name="userID"><br><br>
+    이메일: <br>
+    <input type="text" name="memberEmail"><br><br>
 
     비밀번호 : <br>
-    <input type="password" name="userPW"><br><br>
+    <input type="password" name="memberPassword"><br><br>
 
-    이메일 : <br>
-    <input type="email" name="userMEIL"><br><br>
 
     <div align="center">
-      <input type="submit" value="가입하기">&nbsp;&nbsp;
+      <input type="submit" value="로그인">&nbsp;&nbsp;
       <input type="reset" value="다시작성">
+    </div>
+    <br><br>
+<!--
+    <div align="center">
+      <input type="submit" value="회원가입">
+    </div>
+-->
+    <br><br><br>
+    <!--여기 아래는 구글 로그인-->
+<!--
+    <div id="googleLoginBtn" style="cursor: pointer">
+      <img id="googleLoginImg" src="/images/google_login.png">
     </div>
   </fieldset>
 </form>
+
+<br>
+-->
+  <div align="center">
+    <!-- 회원가입 버튼을 a 태그로 변경 -->
+    <a href="/save" class="signup-button" style="color: black; text-decoration: none">회원가입하러가기 ~~</a>
+  </div>
+
+<br><br><br><br>&nbsp;&nbsp;
+
 </body>
+<!--
+<script>
+  //구글 로그인 관련 스크립트
+  const onClickGoogleLogin = (e) => {
+    // 구글 인증 서버로 인증코드 발급 요청
+    window.location.replace("https://accounts.google.com/o/oauth2/v2/auth?client_id=yourClientID&redirect_uri=http://localhost:8080/login/google/auth&response_type=code&scope=email%20profile%20openid&access_type=offline");
+  }
+
+  const googleLoginBtn = document.getElementById("googleLoginBtn");
+  if (googleLoginBtn) {
+    googleLoginBtn.addEventListener("click", onClickGoogleLogin);
+  }
+</script>
+-->
 </html>
