@@ -39,6 +39,11 @@ public class mainController {
         return "sell";
     }
 
+    @GetMapping("/ECRole")
+    public String ECRole() {
+        return "ECRole";
+    }
+
     //로그인 관련 컨트롤러
     @GetMapping("/login")
     public String login() {
