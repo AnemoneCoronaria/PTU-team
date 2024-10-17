@@ -11,6 +11,7 @@ public class MemberRepository {
     //여기는 DB와 연관있음. mybatis
 
     private final SqlSessionTemplate sql;
+    //음.....
 
     public int save(MemberDTO memberDTO) {
         System.out.println("memberDTO = " + memberDTO);
