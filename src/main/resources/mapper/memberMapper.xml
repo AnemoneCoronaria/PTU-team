@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Member">
+    <insert id="save" parameterType="com.PTUproject.dto.MemberDTO">
+        insert into member_table(memberEmail, memberPassword, memberName, memberAge, memberMobile) values (#{memberEmail}, #{memberPassword}, #{memberName}, #{memberAge}, #{memberMobile})
+    </insert>
+
+    <select id="login" parameterType="com.PTUproject.dto.MemberDTO" resultType="com.PTUproject.dto.MemberDTO">
+        select * from member_table where memberEmail=#{memberEmail} and memberPassword=#{memberPassword}
+        <!--이메일과 비밀번호가 둘 다 만족하는 결과가 있는지 select 하는 sql 구문 -->
+        <!--그래서 MemberService.java에서 null인지 체크하는 내용을 통해 가입했던 이메일과 비번을 정확하게 입력했다는 것을 판별-->
+        <!--아... 참고로 select 사용할 때에는 resultType 사용하는 것이 필수다-->
+    </select>
+
+
+</mapper>
